@@ -1,68 +1,9 @@
-# Archivos y directorios comunes a ignorar
-.DS_Store
+<<<<<<< HEAD
+# Las líneas de tu repositorio local
 *.log
 *.tmp
-*.swp
-*.swo
-
-# Node.js
-node_modules/
-npm-debug.log
-yarn-error.log
-yarn-debug.log
-
-# Entornos de desarrollo
-.vscode/
-.idea/
-
-# Archivos de sistema
-*.bak
-*.swp
-*.swo
-
-# Archivos de configuración local
+=======
+# Las líneas del repositorio remoto
+*.DS_Store
 *.env
-*.env.*
-
-# Carpeta de caché
-.cache/
-
-# Archivos de test
-*.test.js
-*.test.ts
-
-# Imágenes temporales o generadas
-*.png
-*.jpg
-*.jpeg
-*.gif
-
-# Archivos generados por herramientas
-dist/
-build/
-coverage/
-*.gz
-
-# Otros archivos y directorios específicos del proyecto
-*.pem
-*.key
-*.crt
-*.p12
-*.pfx
-*.sublime-workspace
-*.sublime-project
-*.db
-*.sql
-
-# Archivos de Dropbox o similares
-Dropbox/
-*.dropbox/
-*.dropbox.conf
-
-# Archivos de backups
-*.bak
-*.orig
-*.tmp
-
-# Archivos de sistemas de versiones antiguos
-*.gitignore~
+>>>>>>> main
