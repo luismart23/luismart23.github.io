@@ -4,45 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Luis Martínez</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mi Portafolio - Luis Martín</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/favicon.jpg" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <h1>Portafolio de Luis Martínez</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre-mi">Sobre Mí</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>🌟 Mi Portafolio como Desarrollador Fullstack JavaScript Junior 🌟</h1>
+            <h2>👋 Hola, Soy Luis Martín</h2>
+            <p>Desarrollador Fullstack JavaScript Junior con pasión por la tecnología y el desarrollo web.</p>
+            <a href="#about" class="btn">Saber más sobre mí</a>
+        </div>
     </header>
-    <main>
-        <section id="sobre-mi">
-            <h2>Sobre Mí</h2>
-            <p>¡Hola! Soy Luis Martínez, un desarrollador Full Stack JavaScript junior.</p>
-        </section>
-        <section id="proyectos">
-            <h2>Proyectos</h2>
+
+    <section id="about">
+        <div class="container">
+            <h2>🚀 Sobre Mí</h2>
             <ul>
-                <li><a href="https://github.com/luismart23/skate-park">Skate Park</a> - Plataforma para una competencia
-                    de skateboarding.</li>
-                <!-- Agrega más proyectos aquí -->
+                <li><strong>Formación Académica:</strong> Licenciatura en Ingeniería en Sistemas</li>
+                <li><strong>Experiencia Profesional:</strong> Experiencia en el desarrollo de aplicaciones web
+                    utilizando tecnologías modernas</li>
+                <li><strong>Ubicación:</strong> Santiago, Chile</li>
             </ul>
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Email: luis.martinez@example.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/luis-martinez/">Luis Martínez</a></p>
-            <p>GitHub: <a href="https://github.com/luismart23">luismart23</a></p>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>🛠️ Habilidades Técnicas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Nivel</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Avanzado</td>
+                    </tr>
+                    <tr>
+                        <td>Node.js</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>Express.js</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>React.js</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>Handlebars.js</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>PostgreSQL</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>Bootstrap</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>Axios</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>Git</td>
+                        <td>Básico</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>📂 Proyectos Destacados</h2>
+            <div class="project">
+                <img src="assets/img/skate-park.jpg" alt="Skate Park">
+                <h3><a href="#">Proyecto 1: Skate Park</a></h3>
+                <p>Desarrollo de una plataforma web para una competencia de skateboarding organizada por la
+                    Municipalidad de Santiago.</p>
+                <p><strong>Tecnologías:</strong> Node.js, Express, Handlebars, PostgreSQL, Axios</p>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+            <div class="project">
+                <img src="assets/img/proyecto2.jpg" alt="Proyecto 2">
+                <h3><a href="#">Proyecto 2: [Nombre del Proyecto]</a></h3>
+                <p>[Breve descripción del proyecto]</p>
+                <p><strong>Tecnologías:</strong> [Tecnologías usadas]</p>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+            <div class="project">
+                <img src="assets/img/proyecto3.jpg" alt="Proyecto 3">
+                <h3><a href="#">Proyecto 3: [Nombre del Proyecto]</a></h3>
+                <p>[Breve descripción del proyecto]</p>
+                <p><strong>Tecnologías:</strong> [Tecnologías usadas]</p>
+                <a href="#" class="btn">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2>📝 Experiencia y Conocimientos Adicionales</h2>
+            <ul>
+                <li>Desarrollo de APIs RESTful: Creación y consumo de endpoints utilizando Axios y Express.</li>
+                <li>Autenticación y Seguridad: Implementación de autenticación básica y hash de contraseñas con bcrypt.
+                </li>
+                <li>Manejo de Datos: Operaciones CRUD en bases de datos PostgreSQL, manejo de datos en aplicaciones web.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>💬 Testimonios</h2>
+            <blockquote>
+                <p>“[Testimonio de un colega o mentor sobre tu trabajo]”</p>
+                <footer>— [Nombre del Testimonio]</footer>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>📞 Contacto</h2>
+            <p>Si estás interesado en trabajar conmigo o tienes alguna pregunta, no dudes en contactarme.</p>
+            <ul>
+                <li>Email: <a href="mailto:luisdeveloper23@hotmail.com">luisdeveloper23@hotmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/luismart23/">Luis Martínez</a></li>
+                <li>GitHub: <a href="https://github.com/luismart23">luismart23</a></li>
+            </ul>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2024 Luis Martínez. Todos los derechos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 Luis Martín. Todos los derechos reservados.</p>
+        </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
