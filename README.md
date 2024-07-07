@@ -8,7 +8,8 @@ Este repositorio contiene el código fuente de mi portafolio personal, desarroll
 
 ## 🚀 Estructura del Proyecto
 
-01-mi-portafolio/
+```bash
+## 01-mi-portafolio/
 ┣ node_modules/
 ┣ public/
 ┃ ┗ assets/
@@ -33,9 +34,8 @@ Este repositorio contiene el código fuente de mi portafolio personal, desarroll
 ┣ package-lock.json
 ┣ package.json
 ┗ README.md
+```
 
-markdown
-Copiar código
 
 ## 🌐 Tecnologías Usadas
 

@@ -6,19 +6,29 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     background: #333;
     color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
     font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
 header h2 {
     font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    margin: 10px 0;
 }
 
 .btn {
@@ -26,6 +36,7 @@ header h2 {
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
 }
 
 .btn:hover {
@@ -33,24 +44,108 @@ header h2 {
 }
 
 /* Sección de habilidades técnicas */
-table {
+#skills table {
     width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
-th,
-td {
+#skills th,
+#skills td {
     padding: 1rem;
     text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#skills th {
+    background-color: #007bff;
+    color: #fff;
 }
 
 /* Sección de proyectos */
+.project {
+    margin-bottom: 20px;
+}
+
 .project img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.project p {
+    color: #555;
+}
+
+.project .btn-secondary {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project .btn-secondary:hover {
+    background-color: #1e7e34;
+}
+
+/* Sección de contacto */
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact li {
+    margin-bottom: 10px;
 }
 
 /* Footer */
 footer {
     background-color: #333;
     color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+/* Estilos adicionales para mejorar la visualización */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 2rem;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Añadir margen a las secciones */
+section {
+    padding: 40px 0;
 }
