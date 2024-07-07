@@ -1,97 +1,145 @@
-# 🌟 **Mi Portafolio como Desarrollador Fullstack JavaScript Junior** 🌟
+# Mi Portafolio
 
-Bienvenido a mi portafolio en línea. Soy **Luis Martín**, un Desarrollador Fullstack JavaScript Junior apasionado por la tecnología y el desarrollo web. Aquí encontrarás información sobre mí, mis habilidades técnicas, proyectos destacados, y cómo contactarme.
+Bienvenido a mi portafolio, una demostración de mis habilidades como **Desarrollador Fullstack JavaScript Junior**. Aquí encontrarás información sobre mí, mis proyectos destacados, habilidades técnicas, experiencia profesional, y cómo contactarme.
 
----
+## 📂 Contenido del Proyecto
 
-### **👋 Sobre Mí**
+Este repositorio contiene el código fuente de mi portafolio personal, desarrollado utilizando tecnologías modernas de desarrollo web. A continuación, encontrarás una descripción general de la estructura del proyecto y cómo configurarlo localmente.
 
-Hola, soy Luis Martín, un desarrollador web con una sólida formación en **JavaScript** y **Node.js**. Mi enfoque principal es el desarrollo de aplicaciones web y la creación de experiencias digitales atractivas y funcionales.
+## 🚀 Estructura del Proyecto
 
-- **Formación Académica**: Licenciatura en Ingeniería en Sistemas
-- **Experiencia Profesional**: Experiencia en el desarrollo de aplicaciones web utilizando tecnologías modernas como Node.js, Express, Handlebars y PostgreSQL.
-- **Ubicación**: Santiago, Chile
+01-mi-portafolio/
+┣ node_modules/
+┣ public/
+┃ ┗ assets/
+┃ ┣ css/
+┃ ┃ ┗ style.css
+┃ ┣ img/
+┃ ┃ ┣ Captura de pantalla_gh_page_1.png
+┃ ┃ ┣ Captura de pantalla_gh_page_2.png
+┃ ┃ ┣ Captura de pantalla_mi_repo.png
+┃ ┃ ┣ Captura de pantalla_repo1.png
+┃ ┃ ┣ captura_estefania_cn_portafolio.png
+┃ ┃ ┣ favicon.jpg
+┃ ┃ ┣ Programacion-avanzada-en-JS.jpg
+┃ ┃ ┣ skate-park.jpg
+┃ ┃ ┗ viajes-chile.jpg
+┃ ┗ js/
+┃ ┃ ┗ index.js
+┣ .env
+┣ .gitignore
+┣ index.html
+┣ LICENSE
+┣ package-lock.json
+┣ package.json
+┗ README.md
 
----
+markdown
+Copiar código
 
-### **🛠️ Habilidades Técnicas**
+## 🌐 Tecnologías Usadas
 
-Soy competente en una variedad de tecnologías y herramientas que me permiten desarrollar aplicaciones web robustas y efectivas.
+- **HTML5**: Estructura básica de las páginas web.
+- **CSS3**: Estilización de las páginas web utilizando CSS.
+- **Bootstrap 5**: Framework de CSS para crear una interfaz moderna y receptiva.
+- **JavaScript**: Interactividad y dinámicas en la página.
+- **Node.js**: Entorno de ejecución para JavaScript del lado del servidor.
+- **Express.js**: Framework para construir aplicaciones web y APIs en Node.js.
+- **dotenv**: Gestión de variables de entorno.
+- **Helmet**: Middleware de seguridad para proteger aplicaciones Express.
+- **CORS**: Middleware para permitir solicitudes entre diferentes dominios.
+- **Body-Parser**: Middleware para analizar cuerpos de solicitud en Express.
 
-| **Tecnología**    | **Nivel**         |
-|------------------|-------------------|
-| **JavaScript**   | Avanzado          |
-| **Node.js**       | Intermedio        |
-| **Express.js**   | Intermedio        |
-| **React.js**     | Intermedio        |
-| **Handlebars.js**| Intermedio        |
-| **PostgreSQL**   | Intermedio        |
-| **Bootstrap**    | Intermedio        |
-| **Axios**        | Intermedio        |
-| **Git**          | Básico            |
+## 📋 Funcionalidades
 
----
+- **Página de Inicio**: Presentación personal con una breve introducción.
+- **Sección Sobre Mí**: Información sobre mi formación, experiencia profesional y habilidades.
+- **Habilidades Técnicas**: Lista de tecnologías y herramientas con su nivel de competencia.
+- **Proyectos Destacados**: Muestra de proyectos realizados con enlaces a GitHub y descripciones.
+- **Experiencia y Conocimientos Adicionales**: Detalles sobre habilidades y conocimientos extra.
+- **Testimonios**: Espacio para comentarios de colegas o mentores.
+- **Contacto**: Información para contactarme por email, LinkedIn, o GitHub.
 
-### **📂 Proyectos Destacados**
+## 📦 Instalación
 
-Aquí están algunos de los proyectos en los que he trabajado. Cada uno muestra mis habilidades y experiencia en el desarrollo de aplicaciones web.
+Para ejecutar el proyecto en tu máquina local, sigue estos pasos:
 
-1. **[Skate Park](https://github.com/tu-usuario/skate-park)**
+1. **Clona el repositorio:**
 
-   - **Descripción**: Desarrollo de una plataforma web para una competencia de skateboarding organizada por la Municipalidad de Santiago.
-   - **Tecnologías**: Node.js, Express, Handlebars, PostgreSQL, Axios.
-   - **Características**:
-     - Registro y autenticación de usuarios
-     - Gestión de participantes y eventos
-     - Visualización de skaters y sus perfiles
+    ```bash
+    git clone https://github.com/luismart23/01-mi-portafolio.git
+    ```
 
-   ![Skate Park](assets/img/skate-park.jpg)
+2. **Navega al directorio del proyecto:**
 
-2. **[Proyecto 2: [Nombre del Proyecto]](https://github.com/tu-usuario/proyecto2)**
+    ```bash
+    cd 01-mi-portafolio
+    ```
 
-   - **Descripción**: [Breve descripción del proyecto]
-   - **Tecnologías**: [Tecnologías usadas]
-   - **Características**:
-     - [Características del proyecto]
-   
-   ![Proyecto 2](assets/img/proyecto2.jpg)
+3. **Instala las dependencias:**
 
-3. **[Proyecto 3: [Nombre del Proyecto]](https://github.com/tu-usuario/proyecto3)**
+    Asegúrate de tener [Node.js](https://nodejs.org/) instalado. Luego ejecuta:
 
-   - **Descripción**: [Breve descripción del proyecto]
-   - **Tecnologías**: [Tecnologías usadas]
-   - **Características**:
-     - [Características del proyecto]
-   
-   ![Proyecto 3](assets/img/proyecto3.jpg)
+    ```bash
+    npm install
+    ```
 
----
+4. **Configura las variables de entorno:**
 
-### **📝 Experiencia y Conocimientos Adicionales**
+    Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido:
 
-Además de mis habilidades técnicas, tengo experiencia en varios aspectos del desarrollo web:
+    ```plaintext
+    PORT=3000
+    ```
 
-- **Desarrollo de APIs RESTful**: Creación y consumo de endpoints utilizando Axios y Express.
-- **Autenticación y Seguridad**: Implementación de autenticación básica y hash de contraseñas con bcrypt.
-- **Manejo de Datos**: Operaciones CRUD en bases de datos PostgreSQL, manejo de datos en aplicaciones web.
+5. **Ejecuta el servidor:**
 
----
+    Inicia el servidor con el siguiente comando:
 
-### **💬 Testimonios**
+    ```bash
+    npm start
+    ```
 
-Aquí están algunos testimonios de colegas y mentores sobre mi trabajo:
+    El portafolio estará disponible en [http://localhost:3000](http://localhost:3000).
 
-> **“Luis es un desarrollador web muy talentoso y dedicado. Su enfoque en los detalles y su habilidad para resolver problemas hacen de él un gran miembro del equipo.”**  
-> — **Ana González, Desarrolladora Senior en [Empresa]**
+## 🧩 Uso
 
----
+- Abre el archivo `index.html` en tu navegador para ver el portafolio estático.
+- O ejecuta `npm start` para servir el contenido desde el servidor Express.
 
-### **📞 Contacto**
+## 🛠️ Desarrollo
 
-Estoy abierto a nuevas oportunidades y desafíos. Si estás interesado en trabajar conmigo o tienes alguna pregunta, no dudes en contactarme.
+Para hacer cambios en el proyecto:
 
-- **Email**: [Luis Martínez](mailto:luisdeveloper23@hotmail.com)
+1. **Modifica el archivo `index.html`** para actualizar el contenido de la página.
+2. **Edita `public/assets/css/style.css`** para ajustar los estilos.
+3. **Actualiza `public/assets/js/index.js`** para agregar interactividad.
+4. **Ajusta `server.js`** para configurar el servidor Express y sus rutas.
+
+## 📜 Contribuciones
+
+Las contribuciones al proyecto son bienvenidas. Si deseas colaborar, por favor:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama para tus cambios.
+3. Envía un pull request describiendo tus mejoras.
+
+## 📫 Contacto
+
+Para más información o consultas, puedes contactarme a través de:
+
+- **Email**: [luisdeveloper23@hotmail.com](mailto:luisdeveloper23@hotmail.com)
 - **LinkedIn**: [Luis Martínez](https://www.linkedin.com/in/luismart23/)
-- **GitHub**: [Luis Martínez](https://github.com/luismart23)
+- **GitHub**: [luismart23](https://github.com/luismart23)
 
+## 📝 Licencia
 
+Este proyecto está licenciado bajo la Licencia [MIT](LICENSE).
+
+## 🏆 Agradecimientos
+
+Gracias a [DesafíoLatam](https://www.desafiolatam.com/) y [Talento Digital](https://www.talentodigital.cl/) por proporcionar las herramientas y el entorno de aprendizaje que me han ayudado a desarrollar mis habilidades.
+
+---
+
+¡Gracias por visitar mi portafolio! 🚀
