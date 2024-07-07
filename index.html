@@ -6,33 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio - Luis Martínez</title>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="icon" href="assets/img/favicon.jpg" type="image/x-icon">
+    <link rel="icon" href="/assets/img/favicon.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.3/css/all.min.css"
-        integrity="sha512-cD8/xQ5v7eF8KhTVRuMt1WZGwtwgyNGVGr2k9r65MRigFcX2f+N3T4U8Uun4FCt0U0TM3k8BxaOxQn+3L0wKPQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-    <header>
-        <div class="container text-center">
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
             <h1>Mi Portafolio como Desarrollador Fullstack JavaScript Junior</h1>
             <h2>👋 Hola, Soy Luis Martínez</h2>
             <p>Desarrollador Fullstack JavaScript Junior con pasión por la tecnología y el desarrollo web.</p>
-            <a href="#about" class="btn btn-primary">Saber más sobre mí</a>
+            <a href="#about" class="btn btn-light">Saber más sobre mí</a>
         </div>
     </header>
 
     <main>
-        <section id="about" class="text-center">
+        <section id="about" class="py-5 text-center">
             <div class="container">
                 <h2>🚀 Sobre Mí</h2>
-                <p>
-                    Actualmente estoy en la búsqueda de nuevos desafíos y actualizando mis skills en el mundo TI.
+                <p>Actualmente estoy en la búsqueda de nuevos desafíos y actualizando mis skills en el mundo TI.
                     Idealmente, me gustaría trabajar en una empresa líder en telecomunicaciones, banca o innovación,
-                    ganando más experiencia en el desarrollo Backend.
-                </p>
+                    ganando más experiencia en el desarrollo Backend.</p>
                 <ul class="list-unstyled">
                     <li><strong>Formación Académica:</strong> Diseñador industrial de base y ahora Desarrollador
                         Fullstack Jr. del BootCamp de DesafíoLatam y Talento Digital.</li>
@@ -46,10 +42,10 @@
             </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="py-5 bg-light">
             <div class="container">
                 <h2 class="text-center">🛠️ Habilidades Técnicas</h2>
-                <table>
+                <table class="table table-bordered table-striped">
                     <thead>
                         <tr>
                             <th>Tecnología</th>
@@ -94,97 +90,112 @@
             </div>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="py-5">
             <div class="container">
                 <h2 class="text-center">📂 Proyectos Destacados</h2>
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="project">
-                            <img src="assets/img/skate-park.jpg" alt="Skate Park">
-                            <h3><a href="https://luismart23.github.io/18-skate-park-prueba-m8/">Proyecto 1: Skate
-                                    Park</a>
-                            </h3>
-                            <p>Aplicación para la gestión de skaters y competiciones.</p>
-                            <p><strong>Tecnologías:</strong> Node.js, Express, Handlebars, PostgreSQL</p>
-                            <a href="https://github.com/luismart23/18-skate-park-prueba-m8"
-                                class="btn btn-secondary">Ver más</a>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/assets/img/skate-park.jpg" class="card-img-top" alt="Skate Park">
+                            <div class="card-body">
+                                <h5 class="card-title"><a
+                                        href="https://github.com/luismart23/prueba-m8-skatepark-lm-g73">Proyecto 1:
+                                        Skate
+                                        Park</a></h5>
+                                <p class="card-text">Aplicación para la gestión de skaters y competiciones.</p>
+                                <p><strong>Tecnologías:</strong> Node.js, Express, Handlebars, PostgreSQL</p>
+                                <a href="https://github.com/luismart23/prueba-m8-skatepark-lm-g73"
+                                    class="btn btn-secondary">Ver más</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="project">
-                            <img src="assets/img/Programacion-avanzada-en-JS.jpg" alt="Programacion avanzada en JS">
-                            <h3><a href="https://luismart23.github.io/Prueba-Programacion-avanzada-en-JS-G73-LM/">Proyecto
-                                    2: Programación Avanzada en JS</a></h3>
-                            <p>Aplicación de sonidos</p>
-                            <p><strong>Tecnologías:</strong> HTML, CSS, JS</p>
-                            <a href="https://github.com/luismart23/Prueba-Programacion-avanzada-en-JS-G73-LM"
-                                class="btn btn-secondary">Ver más</a>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/assets/img/Programacion-avanzada-en-JS.jpg" class="card-img-top"
+                                alt="Programacion avanzada en JS">
+                            <div class="card-body">
+                                <h5 class="card-title"><a
+                                        href="https://luismart23.github.io/Prueba-Programacion-avanzada-en-JS-G73-LM/">Proyecto
+                                        2: Programación Avanzada en JS</a></h5>
+                                <p class="card-text">Aplicación de sonidos</p>
+                                <p><strong>Tecnologías:</strong> HTML, CSS, JS</p>
+                                <a href="https://github.com/luismart23/Prueba-Programacion-avanzada-en-JS-G73-LM"
+                                    class="btn btn-secondary">Ver más</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="project">
-                            <img src="assets/img/viajes-chile.jpg" alt="Viajes Chile">
-                            <h3><a href="https://luismart23.github.io/Prueba-viajes-Chile/">Proyecto 3: Viajes Chile</a>
-                            </h3>
-                            <p>Aplicaciones responsivas</p>
-                            <p><strong>Tecnologías:</strong> HTML, CSS, JS</p>
-                            <a href="https://github.com/luismart23/Prueba-viajes-Chile" class="btn btn-secondary">Ver
-                                más</a>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="/assets/img/viajes-chile.jpg" class="card-img-top" alt="Viajes Chile">
+                            <div class="card-body">
+                                <h5 class="card-title"><a
+                                        href="https://luismart23.github.io/Prueba-viajes-Chile/">Proyecto 3: Viajes
+                                        Chile</a>
+                                </h5>
+                                <p class="card-text">Aplicaciones responsivas</p>
+                                <p><strong>Tecnologías:</strong> HTML, CSS, JS</p>
+                                <a href="https://github.com/luismart23/Prueba-viajes-Chile"
+                                    class="btn btn-secondary">Ver más</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="experience">
+        <section id="experience" class="py-5 bg-light">
             <div class="container">
                 <h2 class="text-center">📝 Experiencia y Conocimientos Adicionales</h2>
                 <ul>
                     <li>Desarrollo de APIs RESTful: Creación y consumo de endpoints utilizando Axios y Express.</li>
                     <li>Autenticación y Seguridad: Implementación de autenticación básica y hash de contraseñas con
                         bcrypt.</li>
-                    <li>Manejo de Datos: Operaciones CRUD en bases de datos PostgreSQL, manejo de datos en aplicaciones
-                        web.</li>
+                    <li>Gestión de Bases de Datos: Diseño y consulta de bases de datos en PostgreSQL.</li>
+                    <li>Control de Versiones: Uso de Git para el control de versiones y GitHub para la gestión de
+                        proyectos.</li>
+                    <li>Metodologías Ágiles: Familiaridad con SCRUM y Kanban para la gestión de proyectos.</li>
                 </ul>
             </div>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="py-5">
             <div class="container">
-                <h2>📞 Contacto</h2>
-                <p>Si estás interesado en trabajar conmigo o tienes alguna pregunta, no dudes en contactarme.</p>
-                <ul>
-                    <li>Email: <a href="mailto:luisdeveloper23@hotmail.com">luisdeveloper23@hotmail.com</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/luismart23/">LinkedIn</a></li>
-                    <li>GitHub: <a href="https://github.com/luismart23">GitHub</a></li>
-                </ul>
+                <h2 class="text-center">📞 Contacto</h2>
+                <p class="text-center">¿Quieres ponerte en contacto conmigo? ¡No dudes en enviarme un mensaje!</p>
+                <form action="https://formspree.io/f/mjvyojrd" method="POST">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="Tu nombre"
+                            autocomplete="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="form-control"
+                            placeholder="Tu correo electrónico" autocomplete="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tu mensaje"
+                            autocomplete="off" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
             </div>
         </section>
     </main>
 
-    <footer class="text-center">
-        <p>© 2024 Luis Martínez - Todos los derechos reservados.</p>
-        <div class="social-icons">
-            <a href="mailto:luisdeveloper23@hotmail.com" class="text-decoration-none" aria-label="Email">
-                <i class="fas fa-envelope fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/luismart23/" class="text-decoration-none" target="_blank"
-                aria-label="LinkedIn">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://github.com/luismart23" class="text-decoration-none" target="_blank" aria-label="GitHub">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
-        </div>
+    <footer class="bg-primary text-white text-center py-4">
+        <p>&copy; 2024 Luis Martínez. Todos los derechos reservados.</p>
+        <p>
+            <a href="#about" class="text-white">Sobre mí</a> |
+            <a href="#skills" class="text-white">Habilidades</a> |
+            <a href="#projects" class="text-white">Proyectos</a> |
+            <a href="#experience" class="text-white">Experiencia</a> |
+            <a href="#contact" class="text-white">Contacto</a>
+        </p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz4fnFOlBsP9hbM8tB9Up5HDNci8MAEzNGbK4/WjFeZb8m8B78Qhb8X5Bk"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-1SoFmg9U5JYFB8KP5On2sL94le7V1p5KeJczOG7vnkR5rD0k+k6t7ikAfe5XjkFX"
-        crossorigin="anonymous"></script>
-    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/index.js" type="module"></script>
 </body>
 
 </html>
