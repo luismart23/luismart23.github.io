@@ -1,14 +1,23 @@
 /* Variables de CSS */
 :root {
     --primary-color: #007bff;
+    /* Color primario para botones y enlaces */
     --secondary-color: #28a745;
+    /* Color secundario para botones */
     --background-color: #f4f4f4;
+    /* Color de fondo general */
     --text-color: #333;
+    /* Color del texto */
     --header-bg-color: #333;
+    /* Color de fondo del header y footer */
     --header-text-color: #fff;
+    /* Color del texto en header y footer */
     --border-color: #ddd;
+    /* Color del borde de tablas */
     --hover-bg-color: #0056b3;
+    /* Color de fondo para hover en botones */
     --secondary-hover-bg-color: #1e7e34;
+    /* Color de fondo para hover en botones secundarios */
 }
 
 /* Estilos generales */
@@ -21,6 +30,7 @@ body {
     padding: 0;
 }
 
+/* Header */
 header {
     background: var(--header-bg-color);
     color: var(--header-text-color);
@@ -42,6 +52,7 @@ header p {
     margin: 10px 0;
 }
 
+/* Botones */
 .btn {
     background-color: var(--primary-color);
     color: #fff;
@@ -53,6 +64,18 @@ header p {
 
 .btn:hover {
     background-color: var(--hover-bg-color);
+}
+
+/* Sección de perfil */
+#profile img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#profileData {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 /* Sección de habilidades técnicas */
@@ -75,26 +98,26 @@ header p {
 }
 
 /* Sección de proyectos */
-.project {
-    margin-bottom: 20px;
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.project img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+.card-title a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.project h3 {
-    margin-top: 10px;
-    font-size: 1.5rem;
+.card-title a:hover {
+    color: var(--primary-color);
 }
 
-.project p {
+.card-text {
     color: #555;
 }
 
-.project .btn-secondary {
+.card .btn-secondary {
     background-color: var(--secondary-color);
     color: #fff;
     border: none;
@@ -104,18 +127,13 @@ header p {
     transition: background-color 0.3s ease;
 }
 
-.project .btn-secondary:hover {
+.card .btn-secondary:hover {
     background-color: var(--secondary-hover-bg-color);
 }
 
 /* Sección de contacto */
-#contact ul {
-    list-style: none;
-    padding: 0;
-}
-
-#contact li {
-    margin-bottom: 10px;
+#contact h2 {
+    margin-bottom: 20px;
 }
 
 /* Footer */
@@ -132,4 +150,53 @@ footer p {
 
 .social-icons {
     margin-top: 10px;
+}
+
+.social-icons a {
+    color: var(--header-text-color);
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+/* Sección de proyectos */
+#proyectos {
+    padding: 20px 0;
+}
+
+#proyectos .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#proyectos .card-title a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#proyectos .card-title a:hover {
+    color: var(--primary-color);
+}
+
+#proyectos .card-text {
+    color: #555;
+}
+
+#proyectos .btn-secondary {
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#proyectos .btn-secondary:hover {
+    background-color: var(--secondary-hover-bg-color);
 }

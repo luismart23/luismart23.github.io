@@ -1,24 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('updateProfileForm');
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-    form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Evita el envío del formulario de manera convencional
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
 
-        // Obtén los valores del formulario
-        const name = document.getElementById('name').value;
-        const phone = document.getElementById('phone').value;
-        const email = document.getElementById('email').value;
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
 
-        // Actualiza los datos en la lista de perfil
-        document.getElementById('profileName').textContent = name;
-        document.getElementById('profilePhone').textContent = phone;
-        document.getElementById('profileEmail').textContent = email;
-
-        // Cierra el modal
-        const modal = bootstrap.Modal.getInstance(document.getElementById('updateProfileModal'));
-        modal.hide();
-
-        // Opcional: Muestra una alerta de éxito
-        alert('Perfil actualizado con éxito');
+                // Actualiza el hash en la URL sin hacer scroll adicional
+                history.pushState(null, null, targetId);
+            }
+        });
     });
 });
