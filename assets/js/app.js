@@ -1,20 +1,24 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Código JavaScript para tu sitio web aquí
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('updateProfileForm');
 
-    // Ejemplo: Muestra un mensaje en la consola cuando se carga el contenido
-    console.log('El contenido del DOM está completamente cargado y parseado.');
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Evita el envío del formulario de manera convencional
 
-    // Ejemplo: Manejar el envío del formulario de contacto
-    const form = document.querySelector('form');
-    if (form) {
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
+        // Obtén los valores del formulario
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const email = document.getElementById('email').value;
 
-            // Aquí podrías manejar el envío del formulario, como una solicitud fetch a un servidor o a Formspree
-            console.log(`Nombre: ${name}, Correo: ${email}, Mensaje: ${message}`);
-        });
-    }
+        // Actualiza los datos en la lista de perfil
+        document.getElementById('profileName').textContent = name;
+        document.getElementById('profilePhone').textContent = phone;
+        document.getElementById('profileEmail').textContent = email;
+
+        // Cierra el modal
+        const modal = bootstrap.Modal.getInstance(document.getElementById('updateProfileModal'));
+        modal.hide();
+
+        // Opcional: Muestra una alerta de éxito
+        alert('Perfil actualizado con éxito');
+    });
 });

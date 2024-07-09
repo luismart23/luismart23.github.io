@@ -7,109 +7,85 @@
     <title>Mi Portafolio - Luis Martínez</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="icon" href="/assets/img/favicon.jpg" type="image/x-icon">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body class="container">
+    <!-- Header -->
     <header class="bg-primary text-white text-center py-5">
         <div class="container">
             <h1>Portafolio Desarrollador Fullstack JavaScript Jr.</h1>
-            <h2>👋 Hola, Soy Luis Martínez</h2>
-
-            <a href="#contact" class="btn btn-light">Contacto</a>
         </div>
     </header>
+
+    <!-- Main Content -->
     <main class="container">
-        <section class="container">
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="/assets/img/perfil-luis.jpg" alt="Foto de perfil de Luis Martinez"
-                            class="img-fluid rounded-circle mb-3">
-                    </div>
-                    <div class="col-md-8">
-                        <h2>Perfil de Luis Martinez</h2>
-                        <ul class="list-group">
-                            <li class="list-group-item"><strong>Nombre:</strong> Luis Martinez</li>
-                            <li class="list-group-item"><strong>Teléfono:</strong> +56 9 9377 7391</li>
-                            <li class="list-group-item"><strong>Email:</strong> luisdeveloper23@hotmail.com</li>
-                        </ul>
-                        <button class="btn btn-primary mt-3" data-bs-toggle="modal"
-                            data-bs-target="#updateProfileModal">Actualizar
-                            Perfil</button>
-                    </div>
+        <!-- Perfil de Luis Martínez -->
+        <section id="profile" class="mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/assets/img/perfil-luis.jpg" alt="Foto de perfil de Luis Martinez"
+                        class="img-fluid rounded-circle mb-3">
                 </div>
-            </div>
-
-            <!-- Modal para actualizar perfil -->
-            <div class="modal fade" id="updateProfileModal" tabindex="-1" aria-labelledby="updateProfileModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="updateProfileModalLabel">Actualizar Perfil</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <form id="updateProfileForm">
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" id="name" value="Luis Martinez">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="phone" class="form-label">Teléfono</label>
-                                    <input type="tel" class="form-control" id="phone" value="+56 9 9377 7391">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email"
-                                        value="luisdeveloper23@hotmail.com">
-                                </div>
-                                <button type="submit" class="btn btn-primary">Guardar Cambios</button>
-                            </form>
-                        </div>
-                    </div>
+                <div class="col-md-8">
+                    <h2>Perfil de Luis Martínez</h2>
+                    <ul class="list-group" id="profileData">
+                        <li class="list-group-item"><strong>Nombre:</strong> <span id="profileName">Luis Martínez</span>
+                        </li>
+                        <li class="list-group-item"><strong>Teléfono:</strong> <span id="profilePhone">+56 9 9377
+                                7391</span></li>
+                        <li class="list-group-item"><strong>Email:</strong> <span
+                                id="profileEmail">luisdeveloper23@hotmail.com</span></li>
+                        <li class="list-group-item"><strong>Ciudad:</strong> Santiago, RM, Chile</li>
+                    </ul>
+                    <button class="btn btn-primary mt-3" data-bs-toggle="modal"
+                        data-bs-target="#updateProfileModal">Actualizar Perfil</button>
                 </div>
             </div>
         </section>
-        <section class="container">
-            <p>
-                Trabajar en la Industria TI, es una reinvención, ya que vengo del mundo de la construcción y las ventas.
-                No obstante,
-                siempre me he llevado bien con la tecnología y el desarrollo web.
 
-                Experiencia grado junior, ya que, soy nuevo en este rubro y hasta el momento los 47 repositorios en
-                GitHub son la carta
-                de presentación y muestran gráficamente las aptitudes desarrolladas.
+        <!-- Modal para actualizar perfil -->
+        <div class="modal fade" id="updateProfileModal" tabindex="-1" aria-labelledby="updateProfileModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="updateProfileModalLabel">Actualizar Perfil</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="updateProfileForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" value="Luis Martínez" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="phone" value="+56 9 9377 7391" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" value="luisdeveloper23@hotmail.com"
+                                    required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                Busco trabajar, desarrollarme y ganar experiencia enfocado en el backend.
-
-                Los sectores laborales que me interesan están en, la industria TI en general, y particularmente los
-                rubros de
-                Telecomunicaciones, Banca, Innovación, IA. Son mi foco.
-
-                Y siendo aún más específico, me encantaría especializarme en el back, base de datos, y seguridad, de la
-                data empresarial
-                de bancos, mineras, y empresas de telecomunicaciones, como Entel y Telefónica, lideres del rubro.
-
-                Pero soy flexible en la búsqueda.
-                Y no me cierro a ninguna oportunidad.
-
-                (Desarrollador Full-Stack JS,
-                Diseñador industrial y experto multidisciplinario en paneles SIP).
-
-            </p>
-        </section>
-
+        <!-- Sobre Mí -->
         <section id="about" class="py-5 text-center">
             <div class="container">
                 <h2>🚀 Sobre Mí</h2>
                 <p><strong>Actualmente</strong> estoy en la búsqueda de nuevos desafíos y actualizando mis skills en el
-                    mundo TI.
-                    Idealmente, me gustaría trabajar en una empresa líder en telecomunicaciones, banca o innovación,
-                    ganando más experiencia en el desarrollo Backend.</p>
+                    mundo TI. Idealmente, me gustaría trabajar en una empresa líder en telecomunicaciones, banca o
+                    innovación, ganando más experiencia en el desarrollo Backend.</p>
                 <ul class="list-unstyled">
                     <li><strong>Formación Académica:</strong> Diseñador industrial de base y ahora Desarrollador
                         Fullstack Jr. del BootCamp de DesafíoLatam y Talento Digital.</li>
@@ -123,6 +99,7 @@
             </div>
         </section>
 
+        <!-- Habilidades Técnicas -->
         <section id="skills" class="py-5 bg-light">
             <div class="container">
                 <h2 class="text-center">🛠️ Habilidades Técnicas</h2>
@@ -171,6 +148,7 @@
             </div>
         </section>
 
+        <!-- Proyectos Destacados -->
         <section id="projects" class="py-5">
             <div class="container">
                 <h2 class="text-center">📂 Proyectos Destacados</h2>
@@ -181,8 +159,7 @@
                             <div class="card-body">
                                 <h5 class="card-title"><a
                                         href="https://github.com/luismart23/prueba-m8-skatepark-lm-g73">Proyecto 1:
-                                        Skate
-                                        Park</a></h5>
+                                        Skate Park</a></h5>
                                 <p class="card-text">Aplicación para la gestión de skaters y competiciones.</p>
                                 <p><strong>Tecnologías:</strong> Node.js, Express, Handlebars, PostgreSQL</p>
                                 <a href="https://github.com/luismart23/prueba-m8-skatepark-lm-g73"
@@ -210,12 +187,11 @@
                             <img src="/assets/img/viajes-chile.jpg" class="card-img-top" alt="Viajes Chile">
                             <div class="card-body">
                                 <h5 class="card-title"><a
-                                        href="https://luismart23.github.io/Prueba-viajes-Chile/">Proyecto 3: Viajes
-                                        Chile</a>
-                                </h5>
-                                <p class="card-text">Aplicaciones responsivas</p>
+                                        href="https://luismart23.github.io/Prueba-Viajes-en-Chile-G73-LM/">Proyecto 3:
+                                        Viajes en Chile</a></h5>
+                                <p class="card-text">Sitio web informativo sobre destinos turísticos en Chile.</p>
                                 <p><strong>Tecnologías:</strong> HTML, CSS, JS</p>
-                                <a href="https://github.com/luismart23/Prueba-viajes-Chile"
+                                <a href="https://github.com/luismart23/Prueba-Viajes-en-Chile-G73-LM"
                                     class="btn btn-secondary">Ver más</a>
                             </div>
                         </div>
@@ -224,59 +200,37 @@
             </div>
         </section>
 
-        <section id="experience" class="py-5 bg-light">
+        <!-- Contacto -->
+        <section id="contact" class="py-5 bg-light text-center">
             <div class="container">
-                <h2 class="text-center">📝 Experiencia y Conocimientos Adicionales</h2>
-                <ul>
-                    <li>Desarrollo de APIs RESTful: Creación y consumo de endpoints utilizando Axios y Express.</li>
-                    <li>Autenticación y Seguridad: Implementación de autenticación básica y hash de contraseñas con
-                        bcrypt.</li>
-                    <li>Gestión de Bases de Datos: Diseño y consulta de bases de datos en PostgreSQL.</li>
-                    <li>Control de Versiones: Uso de Git para el control de versiones y GitHub para la gestión de
-                        proyectos.</li>
-                    <li>Metodologías Ágiles: Familiaridad con SCRUM y Kanban para la gestión de proyectos.</li>
-                </ul>
-            </div>
-        </section>
+                <h2>✉️ Contacto</h2>
 
-        <section id="contact" class="py-5">
-            <div class="container">
-                <h2 class="text-center">📞 Contacto</h2>
-                <p class="text-center">¿Quieres ponerte en contacto conmigo? ¡No dudes en enviarme un mensaje!</p>
-                <form action="https://formspree.io/f/mjvyojrd" method="POST">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nombre</label>
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Tu nombre"
-                            autocomplete="name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo Electrónico</label>
-                        <input type="email" id="email" name="email" class="form-control"
-                            placeholder="Tu correo electrónico" autocomplete="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Mensaje</label>
-                        <textarea id="message" name="message" class="form-control" rows="4" placeholder="Tu mensaje"
-                            autocomplete="off" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                </form>
+                <a href="mailto:luisdeveloper23@hotmail.com" class="btn btn-primary">Enviar un Email</a>
             </div>
         </section>
     </main>
 
-    <footer class="bg-primary text-white text-center py-4">
-        <p>&copy; 2024 Luis Martínez. Todos los derechos reservados.</p>
-        <p>
-            <a href="#about" class="text-white">Sobre mí</a> |
-            <a href="#skills" class="text-white">Habilidades</a> |
-            <a href="#projects" class="text-white">Proyectos</a> |
-            <a href="#experience" class="text-white">Experiencia</a> |
-            <a href="#contact" class="text-white">Contacto</a>
-        </p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2024 Luis Martínez. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="https://github.com/luismart23" class="text-white me-2" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/luis-martinez-88b4581b0/" class="text-white"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.15.2/dist/umd/popper.min.js"
+        integrity="sha384-1T1ZZdRwiZTk6gQ6MjV8co5rL5VBxk5hJ8eI8ae5zzZ8aFSX0V4XN4BzH5/+/WEC"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93aL29yMntX6DzGn2u8UL2Ht5o5mtfoPCzO7tHe51n9c6Pl1W5Lp4k3UK2+eB8"
+        crossorigin="anonymous"></script>
+    <!-- Custom JS -->
     <script src="/assets/js/app.js"></script>
 </body>
 
