@@ -74,7 +74,7 @@ Envía un pull request describiendo tus mejoras.
 📫 Contacto
 Para más información o consultas, puedes contactarme a través de:
 
-Email: luisdeveloper23@hotmail.com
+Email: luisesteban.art@gmail.com
 LinkedIn: Luis Martínez
 GitHub: luismart23
 📝 Licencia
